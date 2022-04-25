@@ -1,0 +1,15 @@
+<table class="table">
+    <thead class="table-field">
+        <th class="table-field-th">Tarefas pendentes</th>
+    </thead>
+    <tbody class="table-field-body">
+            <tr class="table-field-content-1" *ngFor="let listar of listar_task">
+                <td class="table-field-content-text" >{{listar.text}}</td>
+                <td class="table-field-content-data" >{{listar.data|date:'short'}}</td>
+                <i class="fal fa-check" (click)="concluir(listar.id!)"></i>
+                <i class="fal fa-ban" (click)="deletar(listar.id!)"></i>
+                <a class="fal fa-edit" routerLink="/addtask/{{ listar.id }}"></a>
+            </tr>
+            
+    </tbody>
+</table>

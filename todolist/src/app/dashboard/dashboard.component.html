@@ -1,0 +1,20 @@
+<section class="container">
+    <form  class="form-adicionar" (ngSubmit)="adicionar()" >
+        <h2 class="form-titulo">Adicionar Tarefa</h2>
+
+        <div class="form-field">
+            <label for="" class="form-label">Digite sua tarefa</label>
+            <input type="text" class="form-input" name="text" [(ngModel)]="task.text">
+        </div>
+
+        <div class="form-field">
+            <input type="datetime-local" class="form-input" name="data" [(ngModel)]="task.data" >
+        </div>
+
+        <div class="button-wrapper">
+            <button class="botao" type="submit" routerLink="task/pending">Adicionar tarefa</button>
+        </div>
+    </form>
+    
+</section>
+

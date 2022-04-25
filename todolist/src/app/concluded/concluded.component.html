@@ -1,0 +1,15 @@
+<table class="table">
+    <thead class="table-field">
+        <th class="table-field-th">Tarefas concluidas</th>
+    </thead>
+    <tbody class="table-field-body">  
+        <tr class="table-field-content-1" *ngFor="let listarConcluidas of listar_concluidas">
+            <td class="table-field-content-text">{{listarConcluidas.text}}</td>
+            <td class="table-field-content-data">{{listarConcluidas.data|date:'short'}}</td>
+            <i class="fal fa-undo"(click)="pendente(listarConcluidas.id!)"></i>
+            <i class="fal fa-ban"(click)="deletar(listarConcluidas.id!)"></i>
+            <a class="fal fa-edit" routerLink="/addtask/{{ listarConcluidas.id }}"></a>
+        </tr>
+    </tbody>
+</table>
+

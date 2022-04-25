@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: #333;
+    --secondary: #132A13;
+    --padding: 15px;
+    --cinza : #405040;
+    --cinza-claro: #dedede;
+  }
+
+  .container {
+    max-width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+  }  
+
+  .table {
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .table-field {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: var(--primary);
+
+        .table-field-th {
+            padding: 0 0 0 24px;
+            display: block;
+            font-size: 24px;
+        }
+
+    }
+    
+        
+
+    .table-field-body {
+        color: inherit;
+        font-size: 24px;
+        
+        .table-field-content-1 {
+            border: solid red;
+        }
+        .table-field-content-text {
+            padding-left: 8%;
+            padding-right: 20px;
+            max-width: 500px;
+            min-width: 500px;
+            white-space: nowrap; // Removendo quebra de linha
+            overflow: hidden; // Removendo a barra de rolagem
+            text-overflow: ellipsis; // Adicionando "..." ao final do texto
+            
+        }
+
+        .table-field-content-data {
+            margin-left: 20px;
+            padding: 0 20px 0 20px;
+        }
+        .fal {
+            padding: 9px;
+            cursor: pointer;
+        }
+
+        .fal:hover {
+            color: #1b88bb;
+            font-size: 32px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
